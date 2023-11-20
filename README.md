@@ -2,6 +2,11 @@
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
+
+# Getting an OAuth client ID
+
+Here is how you get and [OAuth Client ID](https://scribehow.com/shared/How_to_Register_an_OAuth_App_on_GitHub__HY-xpTakRKab-I6jdcFT_A)
+
 ## What's next? How do I make an app with this?
 
 We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
