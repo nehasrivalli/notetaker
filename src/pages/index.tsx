@@ -34,7 +34,7 @@ const Content: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
 
   const { data: topics, refetch: refetchTopics } = api.topic.getAll.useQuery(
-    undefined, // no input
+    undefined,
     {
       enabled: sessionData?.user !== undefined,
       onSuccess: (data) => {
@@ -74,7 +74,7 @@ const Content: React.FC = () => {
     <div className="mx-5 mt-5 grid grid-cols-4 gap-2">
       <div className="px-2">
         <ul className="menu rounded-box w-56 bg-base-100 p-2">
-          {topics?.map((topic) => (
+          {topics?.map((topic: Topic) => (
             <li key={topic.id}>
               <a
                 href="#"

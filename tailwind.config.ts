@@ -1,14 +1,13 @@
-import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+// tailwind.config.ts
+export {}; // Add this line to make it a module
 
-export default {
-  content: ["./src/**/*.tsx"],
+/** @type {import('tailwindcss').Config} */
+const config: import('tailwindcss').Config = {
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
-    },
+    extend: {},
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+};
+
+export default config; // Export the configuration

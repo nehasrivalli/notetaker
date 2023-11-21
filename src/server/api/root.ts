@@ -1,5 +1,5 @@
 import { createTRPCRouter } from "./trpc";
-import { exampleRouter } from "./routers/examples";
+import { exampleRouter } from "./routers/example";
 import { topicRouter } from "./routers/topic";
 import { noteRouter } from "./routers/note";
 
